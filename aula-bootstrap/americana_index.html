@@ -7,121 +7,134 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/americanas_style.css">
-        <script type="text/javascriptpt" src="bootstrap/js/bootstrap.min.js"></script>
-       
   </head>
-  <body> 
-    <div class="container-expand-lg">
-<!-- Conguraação da 1ª div caixa vermelha-->
-        <div id="caixa_presente"> 
 
-        <h2 class="caixa">nossas entregas estão funcionando normalmente
-          <a href="#"><img src="img/_caixa_presente.PNG"></a>          
-        </h2>
-        <h2 id="caixa-vermelho"><b>compre com segurança :)</b></h2>
-        
-        </div>
+  <body> 
+    <header>        
+<!-- Conguraação da 1ª div caixa vermelha-->
+        <div class="container fluid px-0 d-lg-block" style="height: 50px;">
+          <a href="#">
+            <picture>        
+              <img src="img/_caixa.jpg" alt="Entega funcionando a todo vapor">      
+            </picture>
+          </a>          
+        </div>       
 <!-- Fim da conguraação da 1ª div caixa vermelha-->
 
 <!-- Início da conguraação do header principal-->
-        <div id="header_principal">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
-            <img src="img/_logo_americana.png" href="#" width="130px">
-          </a>  
-          
-          <form class="form-inline my-0 my-lg-0">
-            <input class="form-control mr-sm-0" type="search"  placeholder="tem, pode procurar :)">
-            <a class=" search my-lg-0" href="#"><img src="img/icon-search2.jpeg" width="30px" height="30p"></a> 
-          </form> 
-
-        </nav>
-        </div>        
-
-        <div class="header_1">     
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="collapse navbar-collapse">    
-            <ul class="navbar-nav mr-auto ">
+        <div class="header" id="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#">
+              <img src="img/_logo_americana.png" href="#" width="150px">
+              </a>               
+             <div class="input-group">
+                <input type="text" class="form-control" placeholder="tem tuuudoo, pode procurar :)" 
+                  aria-label="tem tuuudoo, pode procurar :)">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                    <a href="#">
+                      <img src="img/icone-search.png" alt="">
+                    </a>  
+                  </button>
+                </div>
+            </div>
+            <a href="#">
+              <i style="color: white;" class="fa fa-heart fa-2x"></i>
+            </a>
+            <a href="#">
+              <i style="color: white;" class="fa fa-shopping-basket fa-2x"></i>
+            </a>            
+          </nav>       
+        </div> 
+                   
+         
+        
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse">  
+            <ul class="nav nav-pills fle-nowrap nav-2">
               <li class="nav-item">
-              <a class="nav-link text-white" href="#">covid-19 - nossos cuidados</a>
+                <a class="nav-link " href="#">covid-19 - nossos cuidados</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">seja
+                <a class="nav-link " href="#">seja
                   <img src="img/_icon_americanas.png">prime
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+                <a class="nav-link " href="#">
                   <img src="img/_icon_americanas.png">empresas
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">baixe o app</a>
+                <a class="nav-link" href="#">baixe o app</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">receba hoje</a>
+                <a class="nav-link " href="#">receba hoje</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">venda com a gente</a>
+                <a class="nav-link " href="#">venda com a gente</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">produtos importados</a>
+                <a class="nav-link " href="#">produtos importados</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">nossas marcas</a>
+                <a class="nav-link " href="#">nossas marcas</a>
               </li>    
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+                <a class="nav-link " href="#">
                   <img src="img/_icon_americanas.png"><b>oferta do dia</b>
                 </a>
               </li>   
-            </ul>        
-         
-          </div>
-    
-        </nav>  
-        </div>
+            </ul>
+            </div>        
+          </nav>
+        
+
+        <!-- Início da conguraação da barra de compra--> 
+        <div class="nav-compra">     
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse">    
+              <ul class="navbar-nav mr-auto ">
+               
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">notebook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">celulares</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">console de games</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">brinquedos</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">mévoeis e decoração</a>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">esporte e lazer</a>
+                </li>   
+              </ul>        
+           
+            </div>
+        
+          </nav>  
+                </div>        
+        <!-- Fim da conguraação da barra de compra--> 
+    </header>
 <!-- Fim da conguraação do header principal-->  
 
-<!-- Início da conguraação da barra de compra--> 
-        <div class="nav-compra">     
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="collapse navbar-collapse">    
-      <ul class="navbar-nav mr-auto ">
-       
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">notebook</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">celulares</a>
-        </li>  
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">console de games</a>
-        </li>  
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">brinquedos</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">mévoeis e decoração</a>
-        </li>    
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">esporte e lazer</a>
-        </li>   
-      </ul>        
-   
-    </div>
-
-  </nav>  
-        </div>        
-<!-- Fim da conguraação da barra de compra-->  
+ 
 
 <!-- Ainda falta as configurações-->
         <div id="laranja">          
         </div> 
 
 <!-- Início da configuração do carocel 1-->       
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">   
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
+          <h2><span>dermocosméticos</span></h2>  
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -150,15 +163,23 @@
 <!-- Fim da configuração do carocel 1--> 
 
 <!-- Início da configuração do carocel 2-->
-        <div class="row">
-        <div id="carocel2" class="col-sm-3 col-xs-12">
-          <a href="#"><img src="img/download.jpg" alt="" width="110%" height="100%"></a>
-        </div>  
+        <section class="row">
+          <div id="carocel2" class="col-sm-3 col-xs-12">
+            <a href="#"><img src="img/download.jpg" alt="" width="110%" height="100%"></a>
+          </div> 
 
-        <div id="carocel3" class="col-sm-9 col-xs-12">
-          
-        </div>     
-        </div> 
+          <div id="carocel3" class="col-sm-9 col-xs-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius iure atque voluptates quis modi eos maiores dicta tenetur illo architecto, quod alias, assumenda saepe mollitia! Voluptates libero qui ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius iure atque voluptates quis modi eos maiores dicta tenetur illo architecto, quod alias, assumenda saepe mollitia! Voluptates <a href="#">libero</a>.
+            </p>
+            <div class="card border-light mb-3" style="max-width: 18rem;">                       
+              <div class="card-body">
+                <a href="#"><img src="img/ACNE_ERUPCOES_01.png" alt="" width="20%" height="20%"></a>
+                <a href="#"><p class="card-text">La Roche<br>Posay...</a>
+              </div>
+            </div>     
+          </div>
+        </section>  
 <!-- Fim da configuração do carocel 2-->
 
 <!-- Ainda falta as configurações--> 
@@ -185,7 +206,9 @@
         <div id="footer" class="col-12"></div>          
       </div>
 -->  
-    </div>          
+       
+       <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+       <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   </body>  
 </html>
     

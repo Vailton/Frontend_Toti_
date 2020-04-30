@@ -1,97 +1,37 @@
 
+.header{
+    background-color: red;
+   
 
+
+}
 /*Configuração da caixa vermelha; 1ª div
 ------------------------------------------*/
-.caixa{
-    padding-bottom: 0px;
-    font-size: 25px;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(115, 129, 129);
-}
-
-#caixa-vermelho{    
-    margin: -55px 50px 10px 700px;
-    color: red;
-    margin-bottom: 0px;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /*Configuração do header principal
-------------------------------------------*/
-#header_principal {
-    background-color: red;
-    height: 100px;
-    padding: 20px 20px 20px 100px;
-    margin-top: 16px;
-}
 
-.header_1 {
-    background-color: red;
-    height: 40px;
-    padding-bottom: 50px; 
- 
-}
-
-.form-control{
-    padding-right: 250px;
-    border-radius: 0px;
-    margin-left: 80px;
-    font-size: 25px;
-    margin-bottom: 0px;
-    padding-left: 20px; 
- 
-}
-
-.search {
-    position: absolute;    
-    font-size: 20px;
-    margin-left: 580px;  
-    color: white;
-    
-    
-}
-
-.nav-link:hover{    
-    background-color: rgba(65, 65, 65, 0.993);
-    opacity: 0.20;
-    transition: 1s;
-    border-radius: 10px;
-}
 /*Configuração da barra de compra
 ------------------------------------------*/
-.nav-compra {
-    background-color: white;
-    height: 40px;
-    padding: 0px 0px 50px 500px;  
-}
 
 /*Falta configurar
 ------------------------------------------*/
-#laranja {
-    background-color: orange;
-    height: 40px;
-} 
+
 
 /*Configuração do carocel 1
 ------------------------------------------*/
-#carouselExampleIndicators {
-   
-    height: 350px;
+#carouselExampleIndicators {   
+    
 }
 
 /*Configuração do carocel 2
 ------------------------------------------*/
 #carocel2 {
-
-    height: 350px;
+    
 }
 /*Configuração do carocel 3
 ------------------------------------------*/
-#carocel3 {
-   
-    height: 350px;
+#carocel3 {   
+  
 }
 
 
