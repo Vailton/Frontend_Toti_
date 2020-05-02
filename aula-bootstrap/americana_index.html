@@ -7,50 +7,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/claudflare.css">
         <link rel="stylesheet" type="text/css" href="css/americanas_style.css">
   </head>
 
   <body> 
     <header>        
 <!-- Conguraação da 1ª div caixa vermelha-->
-        <div class="container fluid px-0 d-lg-block" style="height: 50px;">
+        <div class="container fluid px-0 d-lg-block" >
           <a href="#">
             <picture>        
               <img src="img/_caixa.jpg" alt="Entega funcionando a todo vapor">      
             </picture>
           </a>          
         </div>       
-<!-- Fim da conguraação da 1ª div caixa vermelha-->
 
 <!-- Início da conguraação do header principal-->
-        <div class="header" id="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="header">
+          <nav class="navbar navbar-expand-lg table table-borderless">
               <a class="navbar-brand" href="#">
               <img src="img/_logo_americana.png" href="#" width="150px">
               </a>               
              <div class="input-group">
-                <input type="text" class="form-control" placeholder="tem tuuudoo, pode procurar :)" 
+                <input type="text" class="form-control" placeholder="tem tuuudoo, pode procurar :)"
                   aria-label="tem tuuudoo, pode procurar :)">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button">
+                  <button type="button" class="btn btn-light">
                     <a href="#">
                       <img src="img/icone-search.png" alt="">
                     </a>  
                   </button>
                 </div>
             </div>
+            <a href="#">              
+              <i style="color: white;" class="fa fa-user-circle fa-2x"></i>
+            </a>  
             <a href="#">
               <i style="color: white;" class="fa fa-heart fa-2x"></i>
             </a>
             <a href="#">
               <i style="color: white;" class="fa fa-shopping-basket fa-2x"></i>
-            </a>            
-          </nav>       
-        </div> 
-                   
-         
-        
+            </a>                      
+          </nav>
+
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse">  
             <ul class="nav nav-pills fle-nowrap nav-2">
@@ -90,14 +89,13 @@
             </ul>
             </div>        
           </nav>
-        
+        </div>      
+    </header>  
 
         <!-- Início da conguraação da barra de compra--> 
-        <div class="nav-compra">     
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse">    
-              <ul class="navbar-nav mr-auto ">
-               
+        <div class="container-sm">         
+          <nav class="navbar-expand-lg">                
+              <ul class="navbar-nav">               
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#">notebook</a>
                 </li>
@@ -116,23 +114,40 @@
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#">esporte e lazer</a>
                 </li>   
-              </ul>        
+              </ul> 
            
-            </div>
-        
           </nav>  
-                </div>        
-        <!-- Fim da conguraação da barra de compra--> 
-    </header>
-<!-- Fim da conguraação do header principal-->  
-
- 
-
-<!-- Ainda falta as configurações-->
-        <div id="laranja">          
+        </div>  
+    <!-- Configurações da aba app-->
+        <div class="container-sm">
+          <nav class="navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse">  
+            <ul class="nav nav-pills fle-nowrap nav-2">
+              
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">baixe o app</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">receba hoje</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">venda com a gente</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">produtos importados</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">nossas marcas</a>
+              </li>    
+              
+            </ul>
+            </div>        
+          </nav>        
         </div> 
 
-<!-- Início da configuração do carocel 1-->       
+<!-- Início da configuração do carocel 1--> 
+    <main class="container-sm">
+      <section class="carocel1 col-sm-12 col-xs-6">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
           <h2><span>dermocosméticos</span></h2>  
         <ol class="carousel-indicators">
@@ -160,26 +175,31 @@
           <span class="sr-only">Next</span>
         </a>
         </div>
+      </section>
+      
+      <section class=" container-sm row">
+        <div id="carocel2" class="col-sm-3 col-xs-12">
+          <a href="#"><img src="img/download.jpg" alt="" width="110%" height="100%"></a>
+        </div> 
+
+        <div id="carocel3" class="col-sm-9 col-xs-12">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius iure atque voluptates quis modi eos maiores dicta tenetur illo architecto, quod alias, assumenda saepe mollitia! Voluptates libero qui ipsa.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius iure atque voluptates quis modi eos maiores dicta tenetur illo architecto, quod alias, assumenda saepe mollitia! Voluptates <a href="#">libero</a>.
+          </p>
+          <div class="card border-light mb-3" style="max-width: 18rem;">                       
+            <div class="card-body">
+              <a href="#"><img src="img/ACNE_ERUPCOES_01.png" alt="" width="20%" height="20%"></a>
+              <a href="#"><p class="card-text">La Roche<br>Posay...</a>
+            </div>
+          </div>     
+        </div>
+      </section> 
+    </main>    
+        
 <!-- Fim da configuração do carocel 1--> 
 
 <!-- Início da configuração do carocel 2-->
-        <section class="row">
-          <div id="carocel2" class="col-sm-3 col-xs-12">
-            <a href="#"><img src="img/download.jpg" alt="" width="110%" height="100%"></a>
-          </div> 
-
-          <div id="carocel3" class="col-sm-9 col-xs-12">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius iure atque voluptates quis modi eos maiores dicta tenetur illo architecto, quod alias, assumenda saepe mollitia! Voluptates libero qui ipsa.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius iure atque voluptates quis modi eos maiores dicta tenetur illo architecto, quod alias, assumenda saepe mollitia! Voluptates <a href="#">libero</a>.
-            </p>
-            <div class="card border-light mb-3" style="max-width: 18rem;">                       
-              <div class="card-body">
-                <a href="#"><img src="img/ACNE_ERUPCOES_01.png" alt="" width="20%" height="20%"></a>
-                <a href="#"><p class="card-text">La Roche<br>Posay...</a>
-              </div>
-            </div>     
-          </div>
-        </section>  
+         
 <!-- Fim da configuração do carocel 2-->
 
 <!-- Ainda falta as configurações--> 
@@ -208,6 +228,7 @@
 -->  
        
        <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+       <script type="text/javascript" src="bootstrap/js/font-awesome.js"></script>
        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   </body>  
 </html>

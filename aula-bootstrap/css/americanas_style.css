@@ -1,9 +1,23 @@
 
+.caixa_compra{
+ 
+}
+
 .header{
-    background-color: red;
    
+    background-color: red;
+}
+.btn{
+   
+}
 
+.nav-link{
+    color: white;
+}
 
+.text-black{
+    color: black;
+    
 }
 /*Configuração da caixa vermelha; 1ª div
 ------------------------------------------*/
