@@ -3,12 +3,17 @@
 .logo{
    
     background-color: red;
+   
+}
+.prime{
+    color: white;
+    background-color: red;
 }
 .secundary{
-    overflow: scroll;
+    
 }
-   
+
 li.nav-item {
-min-width: 180px;
+min-width: 118px;
 
 }
