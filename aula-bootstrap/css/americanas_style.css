@@ -1,105 +1,14 @@
 
-.caixa_compra{
- 
-}
 
-.header{
+.logo{
    
     background-color: red;
 }
-.btn{
+.secundary{
+    overflow: scroll;
+}
    
-}
+li.nav-item {
+min-width: 180px;
 
-.nav-link{
-    color: white;
 }
-
-.text-black{
-    color: black;
-    
-}
-/*Configuração da caixa vermelha; 1ª div
-------------------------------------------*/
-
-/*Configuração do header principal
-
-/*Configuração da barra de compra
-------------------------------------------*/
-
-/*Falta configurar
-------------------------------------------*/
-
-
-/*Configuração do carocel 1
-------------------------------------------*/
-#carouselExampleIndicators {   
-    
-}
-
-/*Configuração do carocel 2
-------------------------------------------*/
-#carocel2 {
-    
-}
-/*Configuração do carocel 3
-------------------------------------------*/
-#carocel3 {   
-  
-}
-
-
-
-/*OBS: FALTANDO CONFIGURAÇÃO
-------------------------------------------
-#carocel4 {
-    background-color: rgb(236, 185, 16);
-    height: 120px;
-}
-#verde1 {
-    background-color: green;
-    height: 40px;
-}
-
-#carocel5 {
-    background-color: rgb(34, 255, 0);    
-    min-height: 300px;
-}
-#carocel6 {
-    background-color: rgb(236, 49, 16);    
-    min-height: 300px;
-}
-
-#carocel7 {
-    background-color: rgb(93, 0, 255);
-    min-height: 300px;
-}
-#carocel8 {
-    background-color: rgb(236, 16, 108);
-    min-height: 300px;
-}
-
-#carocel9 {
-    background-color: rgb(14, 211, 204);
-    min-height: 300px;
-}
-#carocel10 {
-    background-color: rgb(0, 255, 60);
-    min-height: 300px;
-}
-
-#footer {
-    background-color: rgb(255, 0, 0);
-    height: 100px;  
-}
-
-@media screen and (max-width: 576px) {
-    #azul{
-        height: 60px;
-    }
-    #footer{
-        height: 45px;
-    }
-    
-}
-*/
