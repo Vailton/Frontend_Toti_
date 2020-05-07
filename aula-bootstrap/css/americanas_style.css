@@ -4,6 +4,7 @@
    
     background-color: red;
    
+   
 }
 .prime{
     color: white;
@@ -16,4 +17,8 @@
 li.nav-item {
 min-width: 118px;
 
+}
+.input-group {
+    margin: auto 280px auto 100px;
+    
 }
