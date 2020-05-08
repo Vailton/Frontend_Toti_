@@ -3,7 +3,13 @@ var nome = 'Vailton'; //string
 var pais = 'Guiné-Bissau'; //string
 var profissao = 'Progamador e Designer Gráfico'; //string
 var aluno = 'aluno e estudante FullStack pela Toti'; //string
-
+var cursos = ["htmal", "css", "javascript"] //string
+const pessoa = {
+    nome: "Vailton",
+    pais: "Guiné-Bissau",
+    profissao: "Programador e Designer Gráfico",
+ 
+}
 
 function paragrafo() {
     const pp = document.querySelector("#primeiro")  
@@ -22,7 +28,15 @@ function paragrafo() {
 
 paragrafo();
 
+  /*  if (aluno == true) {
 
+
+    console.log('Você é um aluno da Toti.');
+}
+else {
+    console.log('Você não deve ser aluno! ', );
+}
+*/
 
 //function inicializacao() {
     //console.log('carregando  a pagina')    
@@ -47,11 +61,5 @@ paragrafo();
 //inicializacao() ;  
 //fazOutraCoisa();
 
-
-    /*if (aluno == true) {
-        console.log('Você é um aluno da Toti.');
-    }
-    else {
-        console.log('Você não deve ser aluno! ', resultado);
-    }
-*/
+ 
+//alert("Clique em 'OK' para avançar")
