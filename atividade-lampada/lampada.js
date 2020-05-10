@@ -51,13 +51,14 @@ function interruptor(button){
         button.textContent = "Desligar"
         button.value = "desligar"
     }
-    else{
+    else if (button.value === "desligar"){        
         lampada.src = "img/lampada-desligada.jpg"
         lampada.alt = "lapada desligada"
         button.textContent = "Ligar"
         button.value = "ligar"
     }
 
+    
     //console.log(button.value)
     //console.log(button.textContent)
 }

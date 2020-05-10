@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Lista de Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lista.css">
+    <link rel="stylesheet" href="reset.css">
+   
+</head>
+
+<body>
+    
+    <main class="container">
+        <img src="a9028e3d575dda02e9521ff51e6dd9e2.gif"  alt="">
+        <h1 class="title">
+            Lista de tarefas
+        </h1>
+
+        <form class="add-task">
+            <div>
+                <input class="add-task__text" type="text" id="new-task" name="new-task" 
+                required size="20"  placeholder="Digite aqui sua tarefa"
+                required minlength="2" maxlength="18">
+                       
+            </div>
+            <div>
+                <button
+                    class="add-task__action">
+                    adicionar
+                 </button>
+            </div>            
+        </form>
+
+        <ul class="task-list">
+
+            <li class="task-list__item">
+                estudar html
+            </li>
+
+            <li class="task-list__item">
+                estudar css
+            </li>
+
+            <li class="task-list__item">
+                estudar bootstrap
+            </li>
+
+            <li class="task-list__item">
+                fazer atividade de lista de tarefas
+            </li>
+
+        </ul>
+
+    </main>
+    <script src="lista.js"></script>
+</body>
+
+</html>
