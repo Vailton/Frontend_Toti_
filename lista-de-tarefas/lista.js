@@ -14,12 +14,13 @@ function clicou(){
     var nome = document.querySelector("#digite").value;
     var entrada = document.querySelector("#lista");
       
-    var  liNovo = document.createElement("li");
-    var txtNovo = document.createTextNode(nome);
+    var  liNode = document.createElement("li");
+    var txtNode = document.createTextNode(nome);
 
 
-    liNovo.appendChild(txtNovo);   
-    entrada.appendChild(liNovo);
+    liNode.appendChild(txtNode);   
+    entrada.appendChild(liNode);
+    
 
 }
 //
