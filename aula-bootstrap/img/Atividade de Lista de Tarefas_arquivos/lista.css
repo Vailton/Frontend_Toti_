@@ -55,16 +55,9 @@ input[type=text] {
     background-color: rgb(145, 218, 226);
 }
 
-.task-list{
+.task-list {
     margin-top: 1rem;
     min-width: 300px;
-  
-}
-#lista {
-    margin: 0.1rem 0;
-padding: 0.5rem 0 0.5rem 1rem;
-border-bottom: 1px solid #B2DBBF;
-list-style: none;
 }
 
 .task-list__item,

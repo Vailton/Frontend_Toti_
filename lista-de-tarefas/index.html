@@ -23,19 +23,12 @@
 
         <form class="add-task">
             <div>
-                <input class="add-task__text" type="text" id="new-task" name="new-task" 
-                required size="20"  placeholder="Digite aqui sua tarefa"
-                required minlength="2" maxlength="18">
-                       
-            </div>
-            <div>
-                <button class="add-task__action" type="button" onclick="clicou();">
-                    adicionar
-                 </button>
+                <input class="add-task__text" type="text" id="digite" name="new-task" placeholder="Digite aqui sua tarefa">                       
+                <button class="add-task__action" type="button" onclick="clicou();">adicionar</button>
             </div>            
         </form>
 
-        <ul class="task-list">
+        <ul class="task-list" id="lista">
 
             <li class="task-list__item ">
                 estudar html
@@ -53,10 +46,16 @@
                 fazer atividade de lista de tarefas
             </li>
 
-            <li id="liElement">
+            <li id="li" >
 
             </li>
+            <li id="li" >
 
+            </li>
+            <li id="li" >
+
+            </li>
+            
         </ul>
 
     </main>
