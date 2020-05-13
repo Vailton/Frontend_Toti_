@@ -23,41 +23,41 @@
 
         <form class="add-task">
             <div>
-                <input class="add-task__text" type="text" id="digite" name="new-task" placeholder="Digite aqui sua tarefa">                       
-                <button class="add-task__action" type="button" onclick="clicou();">adicionar</button>
+                <input class="add-task__text" type="text" id="adicionar" placeholder="Digite aqui sua tarefa" required>                       
+                <button  type="submit" id="add-task-button"  class="add-task__action" onclick="clique()" ondblclick="duploClique()" 
+                onkeydown="digitou()">
+                adicionar
+              </button>
             </div>            
         </form>
 
-        <ul class="task-list" id="lista">
-
-            <li class="task-list__item ">
-                estudar html
-            </li>
+        <ul class="task-list">
 
             <li class="task-list__item">
-                estudar css
+      
+              tarefa de exemplo
+      
+              <button class="task-list__action" type="button">
+      
+                <img class="imgem" src="img/baseline_check_circle_black_18dp.png">
+      
+              </button>
+      
             </li>
-
-            <li class="task-list__item">
-                estudar bootstrap
+      
+            <li class="task-list__item--done">
+      
+              tarefa concluida de exemplo
+      
+              <button class="task-list__action" type="button">
+      
+                <img class="imgem" src="img/baseline_cached_black_18dp.png" alt="">
+      
+              </button>
+      
             </li>
-
-            <li class="task-list__item">
-                fazer atividade de lista de tarefas
-            </li>
-
-            <li id="li" >
-
-            </li>
-            <li id="li" >
-
-            </li>
-            <li id="li" >
-
-            </li>
-            
-        </ul>
-
+      
+          </ul>
     </main>
      
     <script src="lista.js"></script>
