@@ -3,6 +3,7 @@ var botaoAdicionar = document.querySelector("#add-task-button")
 var listaDeTarefas = document.querySelector(".task-list")
 
 function adicionarTarefa(event) {  
+    debugger
     if (digiteTarefaInput.value === ""){
         return;
     }
