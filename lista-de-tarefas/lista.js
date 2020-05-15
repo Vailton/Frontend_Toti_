@@ -3,45 +3,66 @@ var botaoAdicionar = document.querySelector("#add-task-button")
 var listaDeTarefas = document.querySelector(".task-list")
 
 function adicionarTarefa(event) {  
-    debugger
+   // debugger
     if (digiteTarefaInput.value === ""){
         return;
     }
-    const novoItem = document.createElement("li")
-    const novoButton = document.createElement("button")    
-    
-    novoItem.textContent = digiteTarefaInput.value
-    novoButton.className = botaoAdicionar.classList
-
-    novoButton.classList.add("task-list__item") 
-    novoItem.classList.add("task-list__item--done")    
-    
-    listaDeTarefas.appendChild(novoItem) 
-    listaDeTarefas.appendChild(novoButton)
-    
-    digiteTarefaInput.value = ""   
+    const novoItem = criarNovoItem(digiteTarefaInput.value)
+    listaDeTarefas.appendChild(novoItem)
+    digiteTarefaInput.value = ""
     digiteTarefaInput.focus()
 
-    function clique(){
-        const botao = document.querySelector("#add-task-button")
-        botao.addEventListener("click", clique) 
-        botao.onclick = clique      
-    }
-    
-    function duploClique(){
-        const botao1 = document.querySelector("#add-task-button")       
-        botao1.addEventListener("dblclick",duploClique)
-        botao1.dblclick = duploClique
+}
 
-    }
+function criarNovoItem(textoTarefa) {
+    const novoItem = document.createElement("li")
+    novoItem.innerText = textoTarefa
+    novoItem.classList.add("task-list__item")
+    novoItem.appendChild(criarBotaoCompletarTarefa())
+    return novoItem
 
-    function digitou(){
-        const botao2 = document.querySelector("#add-task-button")        
-        botao2.addEventListener("keydown", digitou)
-        botao3.keydown = digitou
-    }
+}
+function criarBotaoCompletarTarefa() {
+    const botao = document.createElement("button")
+    botao.type = "button"
+    botao.classList.add("task-list__action")
+    botao.innerHTML = "<i class=\"fas fa-check-square\"></i>"
+    botao.addEventListener("click", completarTarefa)
+    return botao
+}
 
-    
+function completarTarefa(event) {
+    const botao = event.currentTarget;
+    const item = botao.parentNode
+
+    //riscar item
+    item.classList.remove("task-list__item")
+    item.classList.add("task-list__item--done")
+
+    //mudar ícone
+    botao.innerHTML = "<i class=\"fas fa-undo-alt\"></i>"
+
+
+    //atualiza funções chamadas
+    botao.removeEventListener("click", completarTarefa)
+    botao.addEventListener("click", desfazerTarefa)
+
+}
+
+function desfazerTarefa(event) {
+    const botao = event.currentTarget;
+    const item = botao.parentNode
+
+    //riscar item
+    item.classList.remove("task-list__item--done")
+    item.classList.add("task-list__item")
+
+    //mudar ícone
+    botao.innerHTML = "<i class=\"fas fa-check-square\"></i>"
+
+    //atualiza funções chamadas
+    botao.removeEventListener("click", desfazerTarefa)
+    botao.addEventListener("click", completarTarefa)
 }
 
 botaoAdicionar.addEventListener("click", adicionarTarefa)

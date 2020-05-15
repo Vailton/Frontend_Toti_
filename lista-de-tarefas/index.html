@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade de Lista de Tarefas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lista.css">
     <link rel="stylesheet" href="reset.css">
-    <script type="text/javascript" src="lista.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Modak&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="lista.css">
+ 
+   
    
 </head>
 
@@ -24,8 +26,7 @@
         <form class="add-task">
             <div>
                 <input class="add-task__text" type="text" id="adicionar" placeholder="Digite aqui sua tarefa" required>                       
-                <button  type="submit" id="add-task-button"  class="add-task__action" onclick="clique()" ondblclick="duploClique()" 
-                onkeydown="digitou()">
+                <button  type="submit" id="add-task-button"  class="add-task__action" >
                 adicionar
               </button>
             </div>            
@@ -39,7 +40,7 @@
       
               <button class="task-list__action" type="button">
       
-                <img class="imgem" src="img/baseline_check_circle_black_18dp.png">
+                <i class="fas fa-check-square"></i>
       
               </button>
       
@@ -51,27 +52,19 @@
       
               <button class="task-list__action" type="button">
       
-                <img class="imgem" src="img/baseline_check_circle_black_18dp.png">
+                <i class="fas fa-undo-alt"></i>
       
               </button>
       
             </li>
 
-            <li class="task-list__item--done">
-      
-              estudar bootstrap
-       
-               <button class="task-list__action" type="button">
-       
-                 <img class="imgem" src="img/baseline_cached_black_18dp.png" alt="">
-       
-               </button>
-       
-             </li>
+          
       
           </ul>
     </main>
-     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+
+    crossorigin="anônimo"></script>
     <script src="lista.js"></script>
 </body>
 
