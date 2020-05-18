@@ -88,7 +88,7 @@ button {
   color: rgb(5, 240, 248);
 }
 
-.roun-hove {
+.roun-hover {
   border-color: rgb(5, 240, 248);
   color: black;
   
@@ -98,11 +98,22 @@ button {
   background: rgb(5, 240, 248);
     color: black;
 }
+
 .disabled {
   border-color: #e7e7e7;
 }
 
-.focused {
+.disabled:disabled {
+  background: #e7e7e7;
+}
+
+.disabled:hover {
+  border-color: #e7e7e7;
+  color: rebeccapurple;
+}
+
+
+.focused:focus{
   background: rgb(5, 240, 248);
   color: white;
 }

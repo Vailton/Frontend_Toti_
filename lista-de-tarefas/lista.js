@@ -65,4 +65,5 @@ function desfazerTarefa(event) {
     botao.addEventListener("click", completarTarefa)
 }
 
+
 botaoAdicionar.addEventListener("click", adicionarTarefa)
